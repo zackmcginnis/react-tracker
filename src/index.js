@@ -4,9 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const BASE_API_URL="http://localhost:5000"
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App baseApiUrl={BASE_API_URL}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
